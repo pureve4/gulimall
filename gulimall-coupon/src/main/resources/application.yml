@@ -6,6 +6,8 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   cloud:
     nacos:
+      config:
+        server-addr: 127.0.0.1:8848
       discovery:
         server-addr: 127.0.0.1:8848
   application:
@@ -17,3 +19,8 @@ mybatis-plus:
       id-type: auto
 server:
   port: 7000
+
+coupon:
+  user:
+    name: lisi
+    age: 22
